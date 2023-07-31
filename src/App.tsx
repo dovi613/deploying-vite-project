@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function DailyExercise() {
   const [pushUpCount, setPushUpCount] = useState(0);
