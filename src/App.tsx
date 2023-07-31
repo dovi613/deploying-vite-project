@@ -8,7 +8,7 @@ export default function DailyExercise() {
   const [jumpRopeCount, setJumpRopeCount] = useState(0);
   const [pullUpsCount, setPullUpsCount] = useState(0);
 
-  function handleClick(exercise) {
+  function handleClick(exercise: string) {
     switch (exercise) {
       case "PushUps":
         setPushUpCount(pushUpCount + 1);
@@ -33,7 +33,7 @@ export default function DailyExercise() {
     }
   }
 
-  function handleReset(exercise) {
+  function handleReset(exercise: string) {
     switch (exercise) {
       case "PushUps":
         setPushUpCount(0);
@@ -57,9 +57,9 @@ export default function DailyExercise() {
         break;
     }
   }
-  function handleTestReset(pushup) {
-    setPushUpCount(0);
-  }
+ // function handleTestReset(pushup) {
+ //   setPushUpCount(0);
+ // }
 
   return (
     <div>
