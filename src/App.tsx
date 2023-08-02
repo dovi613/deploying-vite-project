@@ -9,57 +9,37 @@ export default function DailyExercise() {
   const [pullUpsCount, setPullUpsCount] = useState(0);
 
   function handleClick(exercise: string) {
-    switch (exercise) {
-      case "PushUps":
-        setPushUpCount(pushUpCount + 1);
-        break;
-      case "Crunches":
-        setCrunchesCount(crunchesCount + 1);
-        break;
-      case "Planks":
-        setPlanksCount(planksCount + 1);
-        break;
-      case "Squats":
-        setSquatsCount(squatsCount + 1);
-        break;
-      case "JumpRope":
-        setJumpRopeCount(jumpRopeCount + 1);
-        break;
-      case "PullUps":
-        setPullUpsCount(pullUpsCount + 1);
-        break;
-      default:
-        break;
+    if (exercise === "PushUps") {
+      setPushUpCount(pushUpCount + 1);
+    } else if (exercise === "Crunches") {
+      setCrunchesCount(crunchesCount + 1);
+    } else if (exercise === "Planks") {
+      setPlanksCount(planksCount + 1);
+    } else if (exercise === "Squats") {
+      setSquatsCount(squatsCount + 1);
+    } else if (exercise === "JumpRope") {
+      setJumpRopeCount(jumpRopeCount + 1);
+    } else if (exercise === "PullUps") {
+      setPullUpsCount(pullUpsCount + 1);
     }
   }
 
   function handleReset(exercise: string) {
-    switch (exercise) {
-      case "PushUps":
-        setPushUpCount(0);
-        break;
-      case "Crunches":
-        setCrunchesCount(0);
-        break;
-      case "Planks":
-        setPlanksCount(0);
-        break;
-      case "Squats":
-        setSquatsCount(0);
-        break;
-      case "JumpRope":
-        setJumpRopeCount(0);
-        break;
-      case "PullUps":
-        setPullUpsCount(0);
-        break;
-      default:
-        break;
+    if (exercise === "PushUps") {
+      setPushUpCount(0);
+    } else if (exercise === "Crunches") {
+      setCrunchesCount(0);
+    } else if (exercise === "Planks") {
+      setPlanksCount(0);
+    } else if (exercise === "Squats") {
+      setSquatsCount(0);
+    } else if (exercise === "JumpRope") {
+      setJumpRopeCount(0);
+    } else if (exercise === "PullUps") {
+      setPullUpsCount(0);
     }
   }
- // function handleTestReset(pushup) {
- //   setPushUpCount(0);
- // }
+
 
   return (
     <div>
