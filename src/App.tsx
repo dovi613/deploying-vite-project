@@ -77,3 +77,5 @@ export default function DailyExercise() {
     </div>
   );
 }
+
+//Added line to allow new commit to github after deploy error
